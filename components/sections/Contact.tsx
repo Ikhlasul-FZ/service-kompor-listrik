@@ -19,7 +19,7 @@ export function Contact() {
             <p className="text-lg text-slate-500 mb-12 font-light leading-relaxed max-w-md">
               {t("contact.sub")}
             </p>
-            
+
             <div className="space-y-8">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-primary shadow-sm">
@@ -27,7 +27,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">WhatsApp</p>
-                  <p className="text-slate-900 font-semibold">0812-3456-7890</p>
+                  <p className="text-slate-900 font-semibold">081234567890</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -54,8 +54,8 @@ export function Contact() {
               className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
             />
             <div className="absolute bottom-10 left-10 right-10 bg-white/90 backdrop-blur-md p-6 rounded-3xl border border-white/20 shadow-xl">
-               <p className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-2">Office Address</p>
-               <p className="text-slate-900 font-semibold text-sm">Jl. Jenderal Sudirman No. 1, Jakarta Pusat, Indonesia</p>
+              <p className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-2">Office Address</p>
+              <p className="text-slate-900 font-semibold text-sm">Jl. Jenderal Sudirman No. 1, Jakarta Pusat, Indonesia</p>
             </div>
           </div>
         </div>

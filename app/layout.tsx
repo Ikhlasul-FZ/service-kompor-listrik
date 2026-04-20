@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "PT. Water Heater Azriel",
-  description: "Fast, reliable water heater repair and installation services at your home. 1 year warranty and certified technicians.",
+  description: "Service Water Heater Profesional dan Terpercaya.",
 };
 
 export default function RootLayout({

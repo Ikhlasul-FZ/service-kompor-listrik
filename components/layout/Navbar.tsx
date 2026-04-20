@@ -151,7 +151,7 @@ export function Navbar() {
               <div className="space-y-4">
                 <Button variant="primary" size="lg" className="w-full h-14 rounded-full gap-3 text-sm shadow-xl shadow-primary/20">
                   <Phone className="w-4 h-4" />
-                  0812-3456-7890
+                  Contact Us
                 </Button>
               </div>
             </div>

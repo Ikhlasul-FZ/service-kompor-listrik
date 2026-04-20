@@ -60,7 +60,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xl font-bold mb-8 text-white tracking-tight">Contact Us</h4>
+            <h4 className="text-xl font-bold mb-8 text-white tracking-tight">Get In Touch</h4>
             <ul className="space-y-6">
               <li className="flex items-start gap-4 group cursor-pointer">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
@@ -68,7 +68,7 @@ export function Footer() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground uppercase font-bold tracking-widest mb-1">Call Us</p>
-                  <p className="text-white font-bold">0812-3456-7890</p>
+                  <p className="text-white font-bold">081234567890</p>
                 </div>
               </li>
               <li className="flex items-start gap-4 group cursor-pointer">
