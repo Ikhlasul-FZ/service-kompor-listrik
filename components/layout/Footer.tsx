@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 export function Footer() {
   return (
     <footer className="bg-foreground text-background py-20">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-8 md:px-12 lg:px-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
           <div className="space-y-8">
             <Link href="/" className="flex items-center gap-3">
@@ -39,7 +39,7 @@ export function Footer() {
           <div>
             <h4 className="text-xl font-bold mb-8 text-white tracking-tight">Quick Links</h4>
             <ul className="space-y-5">
-              {["Services", "Why Us", "Pricing", "Blog", "Privacy Policy"].map((link) => (
+              {["Services", "Why Us", "Pricing", "Privacy Policy"].map((link) => (
                 <li key={link}>
                   <Link href="#" className="text-muted-foreground hover:text-primary transition-all duration-300 flex items-center gap-2 group">
                     <span className="w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-4" />

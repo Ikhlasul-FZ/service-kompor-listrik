@@ -9,7 +9,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="py-32 bg-slate-50">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-8 md:px-12 lg:px-16">
         <div className="grid lg:grid-cols-2 gap-24 items-start">
           <div>
             <h2 className="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-6">{t("contact.tag")}</h2>

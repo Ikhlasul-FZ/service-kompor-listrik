@@ -26,22 +26,21 @@ export function Navbar() {
     { name: t("nav.services"), href: "#services" },
     { name: t("nav.whyUs"), href: "#why-us" },
     { name: t("nav.pricing"), href: "#pricing" },
-    { name: t("nav.blog"), href: "/blog" },
   ];
 
   return (
     <>
       <nav
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-center px-6",
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-center px-8 md:px-12 lg:px-16",
           isScrolled ? "py-3" : "py-6"
         )}
       >
         <div
           className={cn(
-            "container mx-auto px-6 py-2.5 flex items-center justify-between transition-all duration-500",
+            "container mx-auto px-0 py-2.5 flex items-center justify-between transition-all duration-500",
             isScrolled
-              ? "glass rounded-full shadow-lg border border-white/20 max-w-5xl"
+              ? "glass rounded-full shadow-lg border border-white/20 max-w-5xl px-8"
               : "max-w-7xl"
           )}
         >
@@ -49,7 +48,10 @@ export function Navbar() {
             <div className="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-lg italic transition-transform group-hover:scale-110">
               W
             </div>
-            <span className="text-lg font-bold tracking-tight text-slate-900">
+            <span className={cn(
+              "text-lg font-bold tracking-tight",
+              isScrolled ? "text-slate-900" : "text-white"
+            )}>
               Water<span className="text-primary">HeaterAzriel</span>
             </span>
           </Link>
@@ -60,17 +62,23 @@ export function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-semibold text-slate-600 hover:text-primary transition-colors relative group"
+                className={cn(
+                  "text-sm font-semibold transition-colors relative group",
+                  isScrolled ? "text-slate-600 hover:text-primary" : "text-white/80 hover:text-white"
+                )}
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
 
-            <div className="flex items-center gap-4 pl-4 border-l border-slate-100">
+            <div className="flex items-center gap-4 pl-4 border-l border-white/10">
               <button
                 onClick={() => setLang(lang === "ID" ? "EN" : "ID")}
-                className="flex items-center gap-1.5 text-xs font-bold text-slate-400 hover:text-primary transition-colors uppercase tracking-widest"
+                className={cn(
+                  "flex items-center gap-1.5 text-xs font-bold transition-colors uppercase tracking-widest",
+                  isScrolled ? "text-slate-400 hover:text-primary" : "text-white/50 hover:text-white"
+                )}
               >
                 <Globe className="w-3.5 h-3.5" />
                 {lang}
@@ -81,7 +89,7 @@ export function Navbar() {
                 size="sm"
                 className={cn(
                   "gap-2 rounded-full px-6 font-bold transition-all duration-500",
-                  !isScrolled && "border-slate-200 text-slate-600 hover:border-primary hover:text-primary"
+                  !isScrolled && "border-white/20 text-white hover:bg-white/10"
                 )}
               >
                 <Phone className="w-4 h-4" />
@@ -92,7 +100,10 @@ export function Navbar() {
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden p-2 text-slate-900 hover:bg-slate-50 rounded-xl transition-colors"
+            className={cn(
+              "md:hidden p-2 rounded-xl transition-colors",
+              isScrolled ? "text-slate-900 hover:bg-slate-50" : "text-white hover:bg-white/10"
+            )}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

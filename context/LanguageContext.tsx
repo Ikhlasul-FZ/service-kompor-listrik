@@ -17,7 +17,6 @@ const dictionary: Dictionary = {
       whyUs: "Keunggulan",
       pricing: "Harga",
       projects: "Proyek",
-      blog: "Blog",
     },
     hero: {
       badge: "Keunggulan Terverifikasi",
@@ -87,11 +86,6 @@ const dictionary: Dictionary = {
       contact_title: "Hubungi Kami",
       rights: "© 2026 WaterHeater Pro. Hak cipta dilindungi undang-undang.",
     },
-    blog: {
-      tag: "Wawasan Kami",
-      title: "Pengetahuan untuk kenyamanan rumah Anda.",
-      readMore: "Baca Selengkapnya",
-    },
     testimonials: {
       tag: "Testimoni",
       title: "Suara kepuasan pelanggan.",
@@ -108,7 +102,6 @@ const dictionary: Dictionary = {
       whyUs: "Why Us",
       pricing: "Pricing",
       projects: "Projects",
-      blog: "Blog",
     },
     hero: {
       badge: "Certified Excellence",
@@ -177,11 +170,6 @@ const dictionary: Dictionary = {
       services_title: "Our Services",
       contact_title: "Contact Us",
       rights: "© 2026 WaterHeater Pro. All rights reserved.",
-    },
-    blog: {
-      tag: "Our Insights",
-      title: "Knowledge for your home's comfort.",
-      readMore: "Read Full Article",
     },
     testimonials: {
       tag: "Testimonials",

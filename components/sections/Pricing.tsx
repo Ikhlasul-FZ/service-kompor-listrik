@@ -11,7 +11,7 @@ export function Pricing() {
 
   return (
     <section id="pricing" className="py-20 lg:py-32 bg-white">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-8 md:px-12 lg:px-16">
         <div className="max-w-3xl mx-auto text-center mb-16 lg:mb-24">
           <h2 className="text-xs lg:text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4 lg:mb-6">{t("pricing.tag")}</h2>
           <h3 className="text-3xl lg:text-5xl font-medium tracking-tight text-slate-900 mb-6 lg:mb-8">

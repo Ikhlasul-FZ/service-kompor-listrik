@@ -11,7 +11,7 @@ export function Testimonials() {
 
   return (
     <section className="py-32 bg-slate-900 text-white">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-8 md:px-12 lg:px-16">
         <div className="max-w-3xl mx-auto text-center mb-24">
           <h2 className="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-6">{t("testimonials.tag")}</h2>
           <h3 className="text-4xl lg:text-5xl font-medium tracking-tight">
