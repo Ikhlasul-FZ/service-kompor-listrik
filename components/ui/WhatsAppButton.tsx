@@ -15,13 +15,13 @@ export function WhatsAppButton() {
       <motion.a
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        transition={{ 
-          type: "spring", 
-          stiffness: 260, 
+        transition={{
+          type: "spring",
+          stiffness: 260,
           damping: 20,
-          delay: 1 
+          delay: 1
         }}
-        href="https://wa.me/6281234567890"
+        href="https://wa.me/6285190876262"
         target="_blank"
         rel="noopener noreferrer"
         className={cn(
@@ -31,7 +31,7 @@ export function WhatsAppButton() {
         )}
       >
         <MessageCircle className="w-7 h-7 lg:w-8 lg:h-8" />
-        
+
         {/* Minimalist Label Tooltip (Hidden on small mobile, visible on tablet/desktop hover) */}
         <div className="absolute right-full mr-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none translate-x-4 group-hover:translate-x-0 hidden sm:block">
           <div className="bg-white text-slate-900 text-[10px] lg:text-xs font-bold px-4 py-2 lg:px-5 lg:py-3 rounded-xl shadow-2xl border border-slate-100 whitespace-nowrap flex items-center gap-2 lg:gap-3">

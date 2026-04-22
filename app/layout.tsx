@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PT. Water Heater Azriel",
+  title: "Amanda House Tehnik | Service Water Heater",
   description: "Service Water Heater Profesional dan Terpercaya.",
 };
 

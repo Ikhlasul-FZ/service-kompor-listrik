@@ -46,13 +46,13 @@ export function Navbar() {
         >
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-lg italic transition-transform group-hover:scale-110">
-              W
+              A
             </div>
             <span className={cn(
               "text-lg font-bold tracking-tight",
               isScrolled ? "text-slate-900" : "text-white"
             )}>
-              Water<span className="text-primary">HeaterAzriel</span>
+              Amanda <span className="text-primary">House Tehnik</span>
             </span>
           </Link>
 
@@ -84,17 +84,19 @@ export function Navbar() {
                 {lang}
               </button>
 
-              <Button
-                variant={isScrolled ? "primary" : "outline"}
-                size="sm"
-                className={cn(
-                  "gap-2 rounded-full px-6 font-bold transition-all duration-500",
-                  !isScrolled && "border-white/20 text-white hover:bg-white/10"
-                )}
-              >
-                <Phone className="w-4 h-4" />
-                Contact Us
-              </Button>
+              <a href="https://wa.me/6285190876262" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant={isScrolled ? "primary" : "outline"}
+                  size="sm"
+                  className={cn(
+                    "gap-2 rounded-full px-6 font-bold transition-all duration-500",
+                    !isScrolled && "border-white/20 text-white hover:bg-white/10"
+                  )}
+                >
+                  <Phone className="w-4 h-4" />
+                  {t("nav.contact")}
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -160,10 +162,12 @@ export function Navbar() {
               </div>
 
               <div className="space-y-4">
-                <Button variant="primary" size="lg" className="w-full h-14 rounded-full gap-3 text-sm shadow-xl shadow-primary/20">
-                  <Phone className="w-4 h-4" />
-                  Contact Us
-                </Button>
+                <a href="https://wa.me/6285190876262" target="_blank" rel="noopener noreferrer">
+                  <Button variant="primary" size="lg" className="w-full h-14 rounded-full gap-3 text-sm shadow-xl shadow-primary/20">
+                    <Phone className="w-4 h-4" />
+                    {t("nav.contact")}
+                  </Button>
+                </a>
               </div>
             </div>
           </motion.div>

@@ -17,6 +17,7 @@ const dictionary: Dictionary = {
       whyUs: "Keunggulan",
       pricing: "Harga",
       projects: "Proyek",
+      contact: "Hubungi Kami",
     },
     hero: {
       badge: "Keunggulan Terverifikasi",
@@ -84,7 +85,7 @@ const dictionary: Dictionary = {
       links_title: "Tautan Cepat",
       services_title: "Layanan Kami",
       contact_title: "Hubungi Kami",
-      rights: "© 2026 WaterHeater Pro. Hak cipta dilindungi undang-undang.",
+      rights: "© 2026 Amanda House Tehnik Pro. Hak cipta dilindungi undang-undang.",
     },
     testimonials: {
       tag: "Testimoni",
@@ -102,6 +103,7 @@ const dictionary: Dictionary = {
       whyUs: "Why Us",
       pricing: "Pricing",
       projects: "Projects",
+      contact: "Contact Us",
     },
     hero: {
       badge: "Certified Excellence",
@@ -169,7 +171,7 @@ const dictionary: Dictionary = {
       links_title: "Quick Links",
       services_title: "Our Services",
       contact_title: "Contact Us",
-      rights: "© 2026 WaterHeater Pro. All rights reserved.",
+      rights: "© 2026 Amanda House Tehnik Pro. All rights reserved.",
     },
     testimonials: {
       tag: "Testimonials",

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { MapPin, MessageSquare } from "lucide-react";
+import { MapPin, MessageSquare, PhoneCall } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export function Contact() {
@@ -23,11 +23,11 @@ export function Contact() {
             <div className="space-y-8">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-primary shadow-sm">
-                  <MessageSquare className="w-5 h-5" />
+                  <PhoneCall className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">WhatsApp</p>
-                  <p className="text-slate-900 font-semibold">081234567890</p>
+                  <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Number</p>
+                  <p className="text-slate-900 font-semibold">085190876262</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">

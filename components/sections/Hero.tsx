@@ -61,14 +61,23 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-6"
           >
-            <Button variant="primary" size="lg" className="h-14 lg:h-16 w-full sm:w-auto px-10 rounded-full text-base font-semibold shadow-2xl shadow-primary/20 group">
-              {t("hero.cta_quote")}
-              <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="ghost" size="lg" className="h-14 lg:h-16 w-full sm:w-auto px-10 rounded-full text-base font-semibold text-white hover:text-primary transition-colors bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10">
-              <MessageSquare className="w-5 h-5 mr-2" />
-              {t("hero.cta_wa")}
-            </Button>
+            <a href="#pricing" className="w-full sm:w-auto">
+              <Button variant="primary" size="lg" className="h-14 lg:h-16 w-full px-10 rounded-full text-base font-semibold shadow-2xl shadow-primary/20 group">
+                {t("hero.cta_quote")}
+                <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
+            <a 
+              href="https://wa.me/6285190876262" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto"
+            >
+              <Button variant="ghost" size="lg" className="h-14 lg:h-16 w-full px-10 rounded-full text-base font-semibold text-white hover:text-primary transition-colors bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10">
+                <MessageSquare className="w-5 h-5 mr-2" />
+                {t("hero.cta_wa")}
+              </Button>
+            </a>
           </motion.div>
         </div>
       </div>
