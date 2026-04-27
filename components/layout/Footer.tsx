@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -13,9 +14,9 @@ export function Footer() {
       <div className="container mx-auto px-8 md:px-12 lg:px-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
           <div className="space-y-8">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center text-white font-bold text-2xl italic shadow-lg shadow-primary/30">
-                A
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="relative w-32 h-32 transition-transform group-hover:scale-105">
+                <Image src="/images/log.png" alt="Logo" fill className="object-contain" priority />
               </div>
               <span className="text-2xl font-bold tracking-tighter text-white">
                 Amanda <span className="text-primary">House Tehnik</span>
@@ -24,21 +25,6 @@ export function Footer() {
             <p className="text-muted-foreground leading-relaxed text-lg">
               {t("footer.tagline")}
             </p>
-            <div className="flex gap-5">
-              {[
-                { icon: "fi fi-brands-instagram", href: "#" },
-                { icon: "fi fi-brands-facebook", href: "#" },
-                { icon: "fi fi-brands-twitter", href: "#" },
-              ].map((social, i) => (
-                <a
-                  key={i}
-                  href={social.href}
-                  className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
-                >
-                  <i className={`${social.icon} text-xl leading-none`} />
-                </a>
-              ))}
-            </div>
           </div>
 
           <div>
@@ -47,7 +33,6 @@ export function Footer() {
               {[
                 { name: t("nav.services"), href: "#services" },
                 { name: t("nav.whyUs"), href: "#why-us" },
-                { name: t("nav.pricing"), href: "#pricing" },
                 { name: t("nav.projects"), href: "#gallery" },
               ].map((link) => (
                 <li key={link.name}>
@@ -100,7 +85,7 @@ export function Footer() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground mb-1 uppercase tracking-wider font-bold">Location</p>
-                  <p className="text-white font-medium">Jakarta, Indonesia</p>
+                  <p className="text-white font-medium">Surabaya, Indonesia</p>
                 </div>
               </li>
             </ul>

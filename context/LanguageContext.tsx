@@ -20,23 +20,22 @@ const dictionary: Dictionary = {
       contact: "Hubungi Kami",
     },
     hero: {
-      badge: "Keunggulan Terverifikasi",
-      title_1: "Seni dalam ",
-      title_italic: "kenyamanan.",
-      title_2: " Ahli pemanas air.",
-      sub: "Rasakan layanan premium untuk rumah Anda. Kami spesialis dalam pemasangan dan perbaikan cepat dengan fokus pada ketahanan dan keamanan.",
-      cta_quote: "Dapatkan Penawaran",
+      badge: "Spesialis Water Heater Profesional",
+      title_1: "Solusi Nyaman untuk ",
+      title_italic: "Air Hangat ",
+      title_2: "di Setiap Momen Anda",
+      sub: "Rasakan kenyamanan mandi air hangat kapan saja tanpa khawatir. Didukung teknisi berpengalaman, kami siap memberikan layanan pemasangan dan perbaikan yang cepat, aman, dan bergaransi.",
+      cta_quote: "Konsultasi Gratis Sekarang",
       cta_wa: "Chat via WhatsApp",
-      trust: ["Suku Cadang Premium", "Layanan Hari yang Sama", "Garansi 1 Tahun", "Teknisi Berlisensi"],
     },
     services: {
       tag: "Layanan Kami",
-      title: "Solusi komprehensif untuk kebutuhan pemanas air Anda.",
+      title: "Solusi lengkap dan terpercaya untuk segala kebutuhan water heater Anda.",
       list: [
-        { title: "Perbaikan", desc: "Diagnosis dan perbaikan ahli untuk semua model pemanas air." },
-        { title: "Pemasangan", desc: "Pemasangan profesional dengan fokus pada keamanan dan efisiensi." },
-        { title: "Perawatan", desc: "Pembersihan rutin untuk mencegah kebocoran dan memperpanjang umur unit." },
-        { title: "Troubleshooting", desc: "Layanan diagnosa tingkat lanjut untuk masalah efisiensi." },
+        { title: "Perbaikan Cepat", desc: "Atasi berbagai kendala water heater Anda dengan penanganan cepat dan tepat dari teknisi ahli." },
+        { title: "Pemasangan Baru", desc: "Instalasi unit baru sesuai standar keamanan untuk kinerja mesin yang optimal dan awet." },
+        { title: "Servis Berkala", desc: "Layanan cuci dan perawatan rutin untuk menjaga kebersihan air dan mencegah kerusakan." },
+        { title: "Konsultasi & Pengecekan", desc: "Pemeriksaan menyeluruh untuk memastikan instalasi water heater di rumah Anda sangat aman digunakan." },
       ]
     },
     pricing: {
@@ -52,48 +51,48 @@ const dictionary: Dictionary = {
       ]
     },
     contact: {
-      tag: "Kontak",
-      title: "Siap mengembalikan kenyamanan Anda?",
-      sub: "Baik itu perbaikan darurat atau pemasangan baru, tim kami siap membantu Anda hari ini.",
+      tag: "Hubungi Kami",
+      title: "Butuh bantuan dengan water heater Anda?",
+      sub: "Jangan biarkan air dingin mengganggu aktivitas Anda. Teknisi kami siap datang dan menyelesaikan masalah Anda hari ini juga.",
       form: {
         name: "Nama Anda",
-        phone: "Nomor Telepon",
-        message: "Pesan",
-        submit: "Kirim Permintaan",
+        phone: "Nomor WhatsApp",
+        message: "Jelaskan Kendala Anda",
+        submit: "Kirim Pesan",
       }
     },
     whyUs: {
-      tag: "Keunggulan Kami",
-      title: "Membangun kenyamanan melalui keunggulan teknis.",
-      sub: "Kami percaya bahwa layanan berkualitas dimulai dengan kepercayaan. Tim bersertifikat kami berdedikasi untuk memberikan perawatan terbaik bagi rumah Anda.",
+      tag: "Mengapa Memilih Kami",
+      title: "Kenyamanan dan keamanan keluarga Anda adalah prioritas kami.",
+      sub: "Lebih dari sekadar servis, kami memberikan ketenangan pikiran. Dengan teknisi berpengalaman dan pelayanan jujur, kami memastikan setiap pekerjaan selesai dengan sempurna.",
       list: [
-        { title: "Pengalaman", desc: "Lebih dari 10 tahun layanan spesialis dalam industri pemanas air." },
-        { title: "Efisiensi", desc: "Layanan hari yang sama untuk memastikan kenyamanan rumah Anda tidak terganggu." },
-        { title: "Transparansi", desc: "Harga di depan tanpa biaya tersembunyi atau biaya tak terduga." },
-        { title: "Dukungan", desc: "Tindak lanjut dedikasi dan garansi 1 tahun untuk semua layanan." },
+        { title: "Berpengalaman", desc: "Ditangani langsung oleh teknisi spesialis yang telah bertahun-tahun menangani berbagai merk water heater." },
+        { title: "Respons Cepat", desc: "Layanan panggil cepat di hari yang sama untuk mengembalikan kenyamanan mandi Anda secepat mungkin." },
+        { title: "Transparan", desc: "Penjelasan masalah yang jujur dan estimasi biaya yang jelas sebelum pengerjaan dimulai." },
+        { title: "Bergaransi", desc: "Kami memberikan jaminan kepuasan dengan garansi perbaikan dan pemasangan untuk setiap klien." },
       ],
       years: "Tahun Pengalaman",
-      trusted: "Dipercaya oleh 5.000+ Klien"
+      trusted: "Klien yang Terbantu"
     },
     gallery: {
-      tag: "Proyek Kami",
-      title: "Bukti komitmen kami terhadap kesempurnaan teknis.",
-      viewAll: "Lihat Semua Arsip"
+      tag: "Portofolio Kami",
+      title: "Dokumentasi hasil kerja keras tim kami di lapangan.",
+      viewAll: "Lihat Semua Galeri"
     },
     footer: {
-      tagline: "Penyedia layanan pemanas air paling terpercaya di kawasan ini. Kualitas, keamanan, dan kecepatan adalah prioritas utama kami.",
-      links_title: "Tautan Cepat",
-      services_title: "Layanan Kami",
+      tagline: "Spesialis water heater andalan Anda. Kami berkomitmen memberikan layanan yang cepat, aman, dan berkualitas tinggi untuk setiap keluarga.",
+      links_title: "Akses Cepat",
+      services_title: "Layanan Unggulan",
       contact_title: "Hubungi Kami",
-      rights: "© 2026 Amanda House Tehnik Pro. Hak cipta dilindungi undang-undang.",
+      rights: "© 2026 Amanda House Tehnik. Hak cipta dilindungi undang-undang.",
     },
     testimonials: {
-      tag: "Testimoni",
-      title: "Suara kepuasan pelanggan.",
+      tag: "Kata Mereka",
+      title: "Kepuasan pelanggan adalah kebanggaan kami.",
       list: [
-        { name: "Andi Saputra", role: "Pemilik Rumah", text: "Layanan luar biasa. Teknisi tepat waktu, sangat profesional, dan memperbaiki unit kami kurang dari satu jam. Sangat mengesankan." },
-        { name: "Siska Wijaya", role: "Manajer Properti", text: "Saya mempercayakan semua unit apartemen kami kepada mereka. Program perawatan mereka telah menyelamatkan kami jutaan rupiah dari potensi perbaikan." },
-        { name: "Budi Santoso", role: "Klien", text: "Harga paling transparan yang pernah saya temukan. Tidak ada kejutan, hanya pekerjaan berkualitas tinggi dan tim yang sangat sopan." },
+        { name: "Andi Saputra", role: "Pemilik Rumah", text: "Pelayanannya mantap! Teknisi datang tepat waktu, kerjanya rapi, dan water heater saya langsung bisa dipakai lagi. Sangat direkomendasikan." },
+        { name: "Siska Wijaya", role: "Pemilik Kos", text: "Sudah langganan pakai jasa Amanda House Tehnik untuk kos-kosan saya. Servis berkalanya bikin mesin awet dan jarang rewel. Terima kasih!" },
+        { name: "Budi Santoso", role: "Klien Perumahan", text: "Pelayanannya sangat jujur dan transparan dari awal. Teknisi juga ramah dan menjelaskan cara perawatannya dengan sabar. Puas banget!" },
       ]
     }
   },
@@ -106,23 +105,22 @@ const dictionary: Dictionary = {
       contact: "Contact Us",
     },
     hero: {
-      badge: "Certified Excellence",
-      title_1: "The art of ",
-      title_italic: "comfort.",
-      title_2: " Expert water heating.",
-      sub: "Experience premium service for your home. We specialize in fast, reliable installation and repair with a focus on longevity and safety.",
-      cta_quote: "Get a Free Quote",
+      badge: "Professional Water Heater Specialists",
+      title_1: "Convenient Solutions for  ",
+      title_italic: "Hot Water ",
+      title_2: "Anytime You Need It",
+      sub: "Enjoy the comfort of a hot shower anytime without worry. Backed by experienced technicians, we’re ready to provide fast, safe, and guaranteed installation and repair services.",
+      cta_quote: "Free Consultation Now",
       cta_wa: "Chat via WhatsApp",
-      trust: ["Premium Parts", "Same-Day Service", "1-Year Warranty", "Licensed Pros"],
     },
     services: {
       tag: "Our Services",
-      title: "Comprehensive solutions for your water heating needs.",
+      title: "Comprehensive and reliable solutions for all your water heater needs.",
       list: [
-        { title: "Repair Service", desc: "Expert diagnosis and repair for all water heater models." },
-        { title: "Installation", desc: "Professional setup for new units with focus on safety and efficiency." },
-        { title: "Maintenance", desc: "Regular cleaning and inspections to prevent leaks and extend lifespan." },
-        { title: "Troubleshooting", desc: "Advanced diagnostic services to identify efficiency issues." },
+        { title: "Quick Repairs", desc: "Resolve your water heater issues with fast and precise handling by our expert technicians." },
+        { title: "New Installations", desc: "Safe and standard-compliant installation for optimal performance and machine durability." },
+        { title: "Regular Maintenance", desc: "Routine cleaning and servicing to maintain water hygiene and prevent unexpected breakdowns." },
+        { title: "Consultation & Inspection", desc: "Thorough check-ups to ensure your home's water heating system is perfectly safe to use." },
       ]
     },
     pricing: {
@@ -138,48 +136,48 @@ const dictionary: Dictionary = {
       ]
     },
     contact: {
-      tag: "Contact",
-      title: "Ready to restore your comfort?",
-      sub: "Whether it's an emergency repair or a new installation, our team is ready to help you today.",
+      tag: "Contact Us",
+      title: "Need help with your water heater?",
+      sub: "Don't let cold water disrupt your day. Our technicians are ready to come and solve your problems today.",
       form: {
         name: "Your Name",
-        phone: "Phone Number",
-        message: "Message",
-        submit: "Send Request",
+        phone: "WhatsApp Number",
+        message: "Describe your issue",
+        submit: "Send Message",
       }
     },
     whyUs: {
       tag: "Why Choose Us",
-      title: "Crafting comfort through technical excellence.",
-      sub: "We believe that quality service starts with trust. Our certified team is dedicated to providing the highest level of care for your home.",
+      title: "Your family's comfort and safety is our top priority.",
+      sub: "More than just a service, we deliver peace of mind. With experienced technicians and honest service, we ensure every job is done perfectly.",
       list: [
-        { title: "Experience", desc: "Over 10 years of specialized service in the water heating industry." },
-        { title: "Efficiency", desc: "Same-day service to ensure your home's comfort is never compromised." },
-        { title: "Transparency", desc: "Upfront pricing with no hidden fees or unexpected costs." },
-        { title: "Support", desc: "Dedicated follow-up and 1-year warranty on all services." },
+        { title: "Experienced", desc: "Handled directly by specialized technicians with years of experience across all water heater brands." },
+        { title: "Fast Response", desc: "Same-day service to restore your shower's comfort as quickly as possible." },
+        { title: "Transparent", desc: "Honest explanation of issues and clear cost estimates before any work begins." },
+        { title: "Guaranteed", desc: "We ensure your satisfaction with formal warranties for every repair and installation service." },
       ],
-      years: "Years of Expertise",
-      trusted: "Trusted by 5,000+ Clients"
+      years: "Years of Experience",
+      trusted: "Happy Clients"
     },
     gallery: {
-      tag: "Our Projects",
-      title: "Evidence of our commitment to technical perfection.",
-      viewAll: "View All Archive"
+      tag: "Our Portfolio",
+      title: "Documentation of our team's hard work in the field.",
+      viewAll: "View All Gallery"
     },
     footer: {
-      tagline: "The most trusted water heater service provider in the region. Quality, safety, and speed are our top priorities.",
+      tagline: "Your reliable water heater specialist. We are committed to providing fast, safe, and high-quality services for every family.",
       links_title: "Quick Links",
-      services_title: "Our Services",
+      services_title: "Key Services",
       contact_title: "Contact Us",
-      rights: "© 2026 Amanda House Tehnik Pro. All rights reserved.",
+      rights: "© 2026 Amanda House Tehnik. All rights reserved.",
     },
     testimonials: {
-      tag: "Testimonials",
-      title: "Voices of satisfaction.",
+      tag: "What They Say",
+      title: "Customer satisfaction is our ultimate pride.",
       list: [
-        { name: "Andi Saputra", role: "Homeowner", text: "Exemplary service. The technician was punctual, highly professional, and fixed our unit in under an hour. Truly impressive." },
-        { name: "Siska Wijaya", role: "Property Manager", text: "I trust them with all our apartment units. Their maintenance program has saved us thousands in potential repairs." },
-        { name: "Budi Santoso", role: "Client", text: "The most transparent pricing I've encountered. No surprises, just high-quality work and a very polite team." },
+        { name: "Andi Saputra", role: "Homeowner", text: "Excellent service! The technician arrived on time, worked neatly, and my water heater was back to normal in no time. Highly recommended." },
+        { name: "Siska Wijaya", role: "Property Owner", text: "I've been using Amanda House Tehnik's services for my boarding houses. Their regular maintenance keeps the machines durable and trouble-free. Thank you!" },
+        { name: "Budi Santoso", role: "Client", text: "The service was very honest and transparent from the start. The technician was friendly and patiently explained the maintenance steps. Very satisfied!" },
       ]
     }
   }

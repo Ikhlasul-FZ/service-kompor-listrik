@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/Button";
@@ -25,7 +26,6 @@ export function Navbar() {
   const navLinks = [
     { name: t("nav.services"), href: "#services" },
     { name: t("nav.whyUs"), href: "#why-us" },
-    { name: t("nav.pricing"), href: "#pricing" },
   ];
 
   return (
@@ -44,15 +44,18 @@ export function Navbar() {
               : "max-w-7xl"
           )}
         >
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-lg italic transition-transform group-hover:scale-110">
-              A
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className={cn(
+              "relative transition-all duration-500 group-hover:scale-105",
+              isScrolled ? "w-12 h-12" : "w-20 h-20"
+            )}>
+              <Image src="/images/log.png" alt="Logo" fill className="object-contain" priority />
             </div>
             <span className={cn(
-              "text-lg font-bold tracking-tight",
-              isScrolled ? "text-slate-900" : "text-white"
+              "font-bold tracking-tight transition-all duration-500",
+              isScrolled ? "text-black text-base" : "text-white text-lg"
             )}>
-              Amanda <span className="text-primary">House Tehnik</span>
+              Amanda<span className="text-primary">HouseTehnik</span>
             </span>
           </Link>
 
@@ -64,7 +67,7 @@ export function Navbar() {
                 href={link.href}
                 className={cn(
                   "text-sm font-semibold transition-colors relative group",
-                  isScrolled ? "text-slate-600 hover:text-primary" : "text-white/80 hover:text-white"
+                  isScrolled ? "text-neutral-600 hover:text-black" : "text-white/80 hover:text-white"
                 )}
               >
                 {link.name}
@@ -77,7 +80,7 @@ export function Navbar() {
                 onClick={() => setLang(lang === "ID" ? "EN" : "ID")}
                 className={cn(
                   "flex items-center gap-1.5 text-xs font-bold transition-colors uppercase tracking-widest",
-                  isScrolled ? "text-slate-400 hover:text-primary" : "text-white/50 hover:text-white"
+                  isScrolled ? "text-neutral-400 hover:text-black" : "text-white/50 hover:text-white"
                 )}
               >
                 <Globe className="w-3.5 h-3.5" />
@@ -104,7 +107,7 @@ export function Navbar() {
           <button
             className={cn(
               "md:hidden p-2 rounded-xl transition-colors",
-              isScrolled ? "text-slate-900 hover:bg-slate-50" : "text-white hover:bg-white/10"
+              isScrolled ? "text-black hover:bg-neutral-100" : "text-white hover:bg-white/10"
             )}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
@@ -121,7 +124,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 left-0 right-0 z-40 md:hidden bg-white/95 backdrop-blur-2xl flex flex-col pt-24 px-10 pb-10 rounded-b-[40px] shadow-[0_30px_60px_rgba(0,0,0,0.1)] border-b border-slate-100 max-h-[70vh] overflow-y-auto"
+            className="fixed top-0 left-0 right-0 z-40 md:hidden bg-white/95 backdrop-blur-2xl flex flex-col pt-24 px-10 pb-10 rounded-b-[40px] shadow-[0_30px_60px_rgba(0,0,0,0.1)] border-b border-neutral-100 max-h-[70vh] overflow-y-auto"
           >
             <div className="flex flex-col gap-6">
               {navLinks.map((link, i) => (
@@ -133,7 +136,7 @@ export function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className="text-2xl font-medium text-slate-900 hover:text-primary transition-colors"
+                    className="text-2xl font-medium text-black hover:text-primary transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.name}
@@ -143,8 +146,8 @@ export function Navbar() {
             </div>
 
             <div className="mt-auto space-y-8">
-              <div className="flex items-center justify-between py-5 border-y border-slate-100">
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Language</span>
+              <div className="flex items-center justify-between py-5 border-y border-neutral-100">
+                <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">Language</span>
                 <div className="flex gap-3">
                   {["ID", "EN"].map((l) => (
                     <button
@@ -152,7 +155,7 @@ export function Navbar() {
                       onClick={() => setLang(l as any)}
                       className={cn(
                         "w-9 h-9 rounded-lg flex items-center justify-center font-bold text-[10px] transition-all",
-                        lang === l ? "bg-slate-900 text-white shadow-lg" : "bg-slate-50 text-slate-400"
+                        lang === l ? "bg-black text-white shadow-lg" : "bg-neutral-100 text-neutral-400"
                       )}
                     >
                       {l}

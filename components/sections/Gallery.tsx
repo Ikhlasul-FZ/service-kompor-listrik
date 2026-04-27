@@ -57,13 +57,13 @@ export function Gallery() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 lg:gap-10 mb-16 lg:mb-24">
           <div className="max-w-2xl">
             <h2 className="text-xs lg:text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4 lg:mb-6">{t("gallery.tag")}</h2>
-            <h3 className="text-3xl lg:text-5xl font-medium tracking-tight text-slate-900 leading-tight">
+            <h3 className="text-3xl lg:text-5xl font-medium tracking-tight text-black leading-tight">
               {t("gallery.title")}
             </h3>
           </div>
           <button
             onClick={() => setShowAll(true)}
-            className="text-[10px] lg:text-xs font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-primary transition-all duration-300 pb-2 border-b border-slate-100 hover:border-primary self-start lg:self-auto"
+            className="text-[10px] lg:text-xs font-bold uppercase tracking-[0.2em] text-neutral-500 hover:text-primary transition-all duration-300 pb-2 border-b border-neutral-200 hover:border-primary self-start lg:self-auto"
           >
             {t("gallery.viewAll")}
           </button>
@@ -80,7 +80,7 @@ export function Gallery() {
               className="group cursor-pointer"
               onClick={() => setSelectedImage(project.image)}
             >
-              <div className="aspect-[4/5] rounded-[32px] lg:rounded-[48px] bg-slate-100 mb-6 lg:mb-8 overflow-hidden relative border border-slate-50 transition-transform duration-700 group-hover:scale-[0.98]">
+              <div className="aspect-[4/5] rounded-[32px] lg:rounded-[48px] bg-neutral-100 mb-6 lg:mb-8 overflow-hidden relative border border-neutral-100 transition-transform duration-700 group-hover:scale-[0.98]">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -98,8 +98,8 @@ export function Gallery() {
               </div>
               <div className="flex justify-between items-start">
                 <div>
-                  <h4 className="text-base lg:text-lg font-semibold text-slate-900 mb-1 group-hover:text-primary transition-colors">{project.title}</h4>
-                  <p className="text-xs lg:text-sm text-slate-400 font-light tracking-wide">{project.desc}</p>
+                  <h4 className="text-base lg:text-lg font-semibold text-black mb-1 group-hover:text-primary transition-colors">{project.title}</h4>
+                  <p className="text-xs lg:text-sm text-neutral-500 font-light tracking-wide">{project.desc}</p>
                 </div>
               </div>
             </motion.div>
@@ -117,14 +117,14 @@ export function Gallery() {
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
             className="fixed inset-0 z-[100] bg-white flex flex-col"
           >
-            <div className="container mx-auto px-8 md:px-12 lg:px-16 py-10 flex justify-between items-center border-b border-slate-100">
+            <div className="container mx-auto px-8 md:px-12 lg:px-16 py-10 flex justify-between items-center border-b border-neutral-100">
               <div>
                 <h2 className="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-2">{t("gallery.tag")}</h2>
-                <h3 className="text-2xl font-medium text-slate-900 tracking-tight">Full Archive</h3>
+                <h3 className="text-2xl font-medium text-black tracking-tight">Full Archive</h3>
               </div>
               <button 
                 onClick={() => setShowAll(false)}
-                className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-slate-900 hover:bg-primary hover:text-white transition-all duration-500 shadow-sm"
+                className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-black hover:bg-primary hover:text-white transition-all duration-500 shadow-sm"
               >
                 <X className="w-6 h-6" />
               </button>
@@ -142,7 +142,7 @@ export function Gallery() {
                       className="group cursor-pointer"
                       onClick={() => setSelectedImage(item.image)}
                     >
-                      <div className="aspect-[4/5] rounded-[24px] lg:rounded-[40px] bg-slate-50 overflow-hidden relative mb-4 border border-slate-100">
+                      <div className="aspect-[4/5] rounded-[24px] lg:rounded-[40px] bg-neutral-100 overflow-hidden relative mb-4 border border-neutral-200">
                         <Image
                           src={item.image}
                           alt={item.title}
@@ -155,8 +155,8 @@ export function Gallery() {
                           </div>
                         </div>
                       </div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-primary transition-colors">{item.title}</h4>
-                      <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider">{item.desc}</p>
+                      <h4 className="text-sm font-bold text-black group-hover:text-primary transition-colors">{item.title}</h4>
+                      <p className="text-[10px] text-neutral-500 font-medium uppercase tracking-wider">{item.desc}</p>
                     </motion.div>
                   ))}
                 </div>

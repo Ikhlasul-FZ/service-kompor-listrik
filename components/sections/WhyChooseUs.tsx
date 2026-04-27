@@ -13,15 +13,15 @@ export function WhyChooseUs() {
   const features = t("whyUs.list");
 
   return (
-    <section id="why-us" className="relative min-h-screen lg:h-[100dvh] flex items-center bg-slate-50/50 overflow-hidden py-20 lg:py-0">
+    <section id="why-us" className="relative min-h-screen lg:h-[100dvh] flex items-center bg-white overflow-hidden py-20 lg:py-0">
       <div className="container mx-auto px-8 md:px-12 lg:px-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="order-2 lg:order-1">
             <h2 className="text-xs lg:text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4 lg:mb-6">{t("whyUs.tag")}</h2>
-            <h3 className="text-3xl lg:text-5xl font-medium mb-6 lg:mb-10 leading-tight text-slate-900 tracking-tight">
+            <h3 className="text-3xl lg:text-5xl font-medium mb-6 lg:mb-10 leading-tight text-black tracking-tight">
               {t("whyUs.title")}
             </h3>
-            <p className="text-base lg:text-lg text-slate-500 mb-10 lg:mb-16 font-light leading-relaxed max-w-lg">
+            <p className="text-base lg:text-lg text-neutral-600 mb-10 lg:mb-16 font-light leading-relaxed max-w-lg">
               {t("whyUs.sub")}
             </p>
 
@@ -34,9 +34,9 @@ export function WhyChooseUs() {
                       <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-all duration-500">
                         <Icon className="w-4 h-4" />
                       </div>
-                      <h4 className="text-base lg:text-lg font-semibold text-slate-900">{f.title}</h4>
+                      <h4 className="text-base lg:text-lg font-semibold text-black">{f.title}</h4>
                     </div>
-                    <p className="text-slate-500 text-xs lg:text-sm leading-relaxed font-light">
+                    <p className="text-neutral-500 text-xs lg:text-sm leading-relaxed font-light">
                       {f.desc}
                     </p>
                   </div>
@@ -46,14 +46,14 @@ export function WhyChooseUs() {
           </div>
 
           <div className="relative flex justify-center lg:justify-end order-1 lg:order-2">
-            <div className="w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[550px] aspect-[4/5] max-h-[50vh] lg:max-h-[80vh] bg-slate-100 rounded-[40px] lg:rounded-[60px] overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.05)] border border-slate-100 relative group">
+            <div className="w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[550px] aspect-[4/5] max-h-[50vh] lg:max-h-[80vh] bg-neutral-100 rounded-[40px] lg:rounded-[60px] overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.05)] border border-neutral-100 relative group">
               <Image
                 src="/images/wcu.webp"
                 alt="Our Expertise"
                 fill
                 className="object-cover transition-transform duration-1000 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
               <div className="absolute bottom-8 left-8 right-8 lg:bottom-12 lg:left-12 lg:right-12">
                 <motion.div
@@ -78,8 +78,8 @@ export function WhyChooseUs() {
                   </div>
                   
                   <div className="flex flex-col">
-                    <p className="text-lg lg:text-xl font-bold text-slate-900 leading-tight mb-1">{t("whyUs.years")}</p>
-                    <p className="text-[10px] lg:text-xs text-slate-500 font-bold uppercase tracking-[0.2em]">{t("whyUs.trusted")}</p>
+                    <p className="text-lg lg:text-xl font-bold text-black leading-tight mb-1">{t("whyUs.years")}</p>
+                    <p className="text-[10px] lg:text-xs text-neutral-600 font-bold uppercase tracking-[0.2em]">{t("whyUs.trusted")}</p>
                   </div>
                 </motion.div>
               </div>

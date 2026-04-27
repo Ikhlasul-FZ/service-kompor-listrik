@@ -10,7 +10,7 @@ export function Testimonials() {
   const testimonials = t("testimonials.list");
 
   return (
-    <section className="py-32 bg-slate-900 text-white">
+    <section className="py-32 bg-black text-white">
       <div className="container mx-auto px-8 md:px-12 lg:px-16">
         <div className="max-w-3xl mx-auto text-center mb-24">
           <h2 className="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-6">{t("testimonials.tag")}</h2>
@@ -34,12 +34,12 @@ export function Testimonials() {
                   <Star key={i} className="w-4 h-4 fill-current" />
                 ))}
               </div>
-              <p className="text-2xl font-serif italic mb-10 text-slate-200 leading-relaxed">
+              <p className="text-2xl font-serif italic mb-10 text-neutral-300 leading-relaxed">
                 &quot;{t.text}&quot;
               </p>
               <div className="mt-auto">
                 <p className="font-semibold text-lg">{t.name}</p>
-                <p className="text-xs text-slate-500 uppercase tracking-widest mt-1">{t.role}</p>
+                <p className="text-xs text-neutral-500 uppercase tracking-widest mt-1">{t.role}</p>
               </div>
             </motion.div>
           ))}
