@@ -15,10 +15,10 @@ export function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero3.webp"
-          alt="Water Heater Service"
+          src="/images/hero.webp"
+          alt="Electric Stove Service"
           fill
-          className="object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-1000"
+          className="object-cover opacity-75 grayscale hover:grayscale-0 transition-all duration-1000"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/90" />
@@ -67,9 +67,9 @@ export function Hero() {
                 <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
-            <a 
-              href="https://wa.me/6285190876262" 
-              target="_blank" 
+            <a
+              href="https://wa.me/6285190876262"
+              target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto"
             >

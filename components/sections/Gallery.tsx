@@ -10,40 +10,42 @@ const projects = [
   {
     id: "01",
     title: "Project 1",
-    desc: "Water Heater Installation",
-    image: "/images/arsip1.webp"
+    desc: "Electric Stove Installation",
+    image: "/images/img1.webp"
   },
   {
     id: "02",
     title: "Project 2",
-    desc: "Water Heater Installation",
-    image: "/images/arsip2.webp"
+    desc: "Electric Stove Installation",
+    image: "/images/img2.webp"
   },
   {
     id: "03",
     title: "Project 3",
-    desc: "Water Heater Service",
-    image: "/images/arsip3.webp"
+    desc: "Electric Stove Service",
+    image: "/images/img3.webp"
   },
   {
     id: "04",
     title: "Project 4",
-    desc: "Water Heater Service",
-    image: "/images/arsip4.webp"
+    desc: "Electric Stove Service",
+    image: "/images/img4.webp"
   },
 ];
 
 // Extended list for the "View All" modal
 const allArchives = [
   ...projects,
-  { id: "05", title: "Project 5", desc: "Water Heater Service", image: "/images/arsip5.webp" },
-  { id: "06", title: "Project 6", desc: "Water Heater Service", image: "/images/arsip6.webp" },
-  { id: "07", title: "Project 7", desc: "Water Heater Service", image: "/images/arsip7.webp" },
-  { id: "08", title: "Project 8", desc: "Water Heater Service", image: "/images/arsip8.webp" },
-  { id: "09", title: "Project 9", desc: "Water Heater Service", image: "/images/arsip9.webp" },
-  { id: "10", title: "Project 10", desc: "Water Heater Service", image: "/images/arsip10.webp" },
-  { id: "11", title: "Project 11", desc: "Water Heater Service", image: "/images/arsip11.webp" },
-  { id: "12", title: "Project 12", desc: "Water Heater Service", image: "/images/arsip4.webp" },
+  { id: "05", title: "Project 5", desc: "Water Heater Service", image: "/images/img5.webp" },
+  { id: "06", title: "Project 6", desc: "Water Heater Service", image: "/images/img6.webp" },
+  { id: "07", title: "Project 7", desc: "Water Heater Service", image: "/images/img7.webp" },
+  { id: "08", title: "Project 8", desc: "Water Heater Service", image: "/images/img8.webp" },
+  { id: "09", title: "Project 9", desc: "Water Heater Service", image: "/images/img9.webp" },
+  { id: "10", title: "Project 10", desc: "Water Heater Service", image: "/images/img10.webp" },
+  { id: "11", title: "Project 11", desc: "Water Heater Service", image: "/images/img11.webp" },
+  { id: "12", title: "Project 12", desc: "Water Heater Service", image: "/images/img12.webp" },
+  { id: "13", title: "Project 13", desc: "Water Heater Service", image: "/images/img13.webp" },
+  { id: "14", title: "Project 14", desc: "Water Heater Service", image: "/images/img14.webp" },
 ];
 
 export function Gallery() {
@@ -122,7 +124,7 @@ export function Gallery() {
                 <h2 className="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-2">{t("gallery.tag")}</h2>
                 <h3 className="text-2xl font-medium text-black tracking-tight">Full Archive</h3>
               </div>
-              <button 
+              <button
                 onClick={() => setShowAll(false)}
                 className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-black hover:bg-primary hover:text-white transition-all duration-500 shadow-sm"
               >
@@ -176,14 +178,14 @@ export function Gallery() {
             className="fixed inset-0 z-[110] bg-black/95 backdrop-blur-xl flex items-center justify-center p-4 lg:p-10"
             onClick={() => setSelectedImage(null)}
           >
-            <button 
+            <button
               className="absolute top-10 right-10 w-14 h-14 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-all z-[120]"
               onClick={() => setSelectedImage(null)}
             >
               <X className="w-8 h-8" />
             </button>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
