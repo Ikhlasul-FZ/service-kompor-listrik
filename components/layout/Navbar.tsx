@@ -47,7 +47,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className={cn(
               "relative transition-all duration-500 group-hover:scale-105",
-              isScrolled ? "w-12 h-12" : "w-20 h-20"
+              isScrolled ? "w-10 h-10 lg:w-12 lg:h-12" : "w-16 h-16 lg:w-20 lg:h-20"
             )}>
               <Image src="/images/log.png" alt="Logo" fill className="object-contain" priority />
             </div>

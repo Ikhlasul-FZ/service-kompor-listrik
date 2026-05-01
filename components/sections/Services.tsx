@@ -2,10 +2,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Wrench, Zap, Droplets, Search } from "lucide-react";
+import { Power, Flame, Zap, AlertCircle, Settings2, Timer } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
-const icons = [Wrench, Zap, Droplets, Search];
+const icons = [Power, Flame, Zap, AlertCircle, Settings2, Timer];
 
 export function Services() {
   const { t } = useLanguage();
@@ -16,12 +16,15 @@ export function Services() {
       <div className="container mx-auto px-8 md:px-12 lg:px-16">
         <div className="max-w-3xl mx-auto text-center mb-16 lg:mb-24">
           <h2 className="text-xs lg:text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4 lg:mb-6">{t("services.tag")}</h2>
-          <h3 className="text-3xl lg:text-5xl font-medium tracking-tight text-black leading-tight">
+          <h3 className="text-3xl lg:text-5xl font-medium tracking-tight text-black leading-tight mb-6 lg:mb-8">
             {t("services.title")}
           </h3>
+          <p className="text-base lg:text-lg text-neutral-600 font-light leading-relaxed max-w-2xl mx-auto">
+            {t("services.sub")}
+          </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-x-12 lg:gap-y-16">
           {servicesList.map((service: any, index: number) => {
             const Icon = icons[index];
             return (

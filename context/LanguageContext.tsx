@@ -21,21 +21,23 @@ const dictionary: Dictionary = {
     },
     hero: {
       badge: "Spesialis Kompor Listrik",
-      title_1: "Dapur Lancar, ",
-      title_italic: "Kompor Listrik ",
-      title_2: "Siap Pakai",
-      sub: "Perbaikan & perawatan cepat, aman, dan bergaransi oleh teknisi berpengalaman.",
+      title_1: "Amanda House Tehnik",
+
+      sub: "Melayani service semua merk kompor listrik di area Surabaya dan sekitarnya. Pelayanan ditempat siap dipanggil 24 jam.",
       cta_quote: "Konsultasi Gratis",
       cta_wa: "WhatsApp",
     },
     services: {
-      tag: "Layanan Kami",
-      title: "Solusi lengkap dan terpercaya untuk segala kebutuhan kompor listrik Anda.",
+      tag: "Permasalahan Umum",
+      title: "Masalah kompor listrik yang sering kami tangani, dan lain-lain.",
+      sub: "Jika Anda mengalami kendala lain di luar daftar ini, jangan ragu untuk berkonsultasi dengan teknisi kami.",
       list: [
-        { title: "Perbaikan Cepat", desc: "Atasi berbagai kendala kompor listrik Anda seperti mati total, tidak panas, atau korsleting." },
-        { title: "Pemasangan Baru", desc: "Instalasi kompor tanam atau induksi sesuai standar keamanan untuk kinerja optimal." },
-        { title: "Servis Berkala", desc: "Pembersihan dan pengecekan komponen internal untuk menjaga kestabilan suhu dan keamanan." },
-        { title: "Konsultasi & Pengecekan", desc: "Pemeriksaan menyeluruh untuk memastikan instalasi listrik di dapur Anda aman digunakan." },
+        { title: "Mati Total", desc: "Kompor tidak mau menyala sama sekali meskipun sudah terhubung ke aliran listrik." },
+        { title: "Tidak Panas", desc: "Kompor menyala namun elemen pemanas tidak berfungsi atau panas tidak merata." },
+        { title: "Konsleting Listrik", desc: "Listrik rumah sering anjlok atau turun saat kompor listrik sedang digunakan." },
+        { title: "Muncul Kode Error", desc: "Muncul kode error (E1, E2, dll) pada display yang menyebabkan kompor tidak berfungsi." },
+        { title: "Panel Sentuh Rusak", desc: "Tombol atau panel sentuh tidak merespon sama sekali saat dioperasikan." },
+        { title: "Kompor Mati Sendiri", desc: "Kompor tiba-tiba mati saat sedang digunakan meskipun tidak ada pengaturan timer." },
       ]
     },
     pricing: {
@@ -90,9 +92,12 @@ const dictionary: Dictionary = {
       tag: "Kata Mereka",
       title: "Kepuasan pelanggan adalah kebanggaan kami.",
       list: [
-        { name: "Andi Saputra", role: "Pemilik Rumah", text: "Pelayanannya mantap! Teknisi datang tepat waktu, kerjanya rapi, dan kompor listrik saya langsung bisa dipakai lagi. Sangat direkomendasikan." },
-        { name: "Siska Wijaya", role: "Pemilik Kos", text: "Sudah langganan pakai jasa Amanda House Tehnik untuk dapur umum di kos saya. Servis berkalanya bikin kompor awet dan tidak cepat rusak. Terima kasih!" },
-        { name: "Budi Santoso", role: "Klien Perumahan", text: "Pelayanannya sangat jujur dan transparan dari awal. Teknisi juga ramah dan menjelaskan cara penggunaan yang aman dengan sabar. Puas banget!" },
+        { name: "Andi Saputra", role: "Pemilik Rumah", text: "Sudah jadi langganan kalau ada kompor listrik ngadat. Soalnya bisa dipanggil kapan aja, saya butuh cepat.", image: "/images/avatar4.png" },
+        { name: "Siska Wijaya", role: "Pemilik Kos", text: "Teknisi datang tepat waktu dan jelasin permasalahan dengan rinci. Sekarang kompor saya sudah stabil dan aman.", image: "/images/avatar5.png" },
+        { name: "Budi Santoso", role: "Klien Perumahan", text: "Awalnya ragu, tapi ternyata hasilnya memuaskan. Kompor saya jadi normal lagi dan harganya juga transparan, ga ada biaya tambahan aneh-aneh.", image: "/images/avatar6.png" },
+        { name: "Joko Susilo", role: "Ibu Rumah Tangga", text: "Senang banget akhirnya nemu tempat servis yang bener. Kompor induksi saya yang mati total sekarang sudah normal lagi.", image: "/images/avatar7.png" },
+        { name: "Rita Amalia", role: "Pengusaha", text: "Respon sangat cepat, teknisi profesional. Sangat membantu untuk kebutuhan dapur resto saya yang mendadak.", image: "/images/avatar8.png" },
+        { name: "Hendra Gunawan", role: "Pemilik Rumah", text: "Harga sesuai dengan kualitas. Ga cuma benerin, tapi juga dikasih tips perawatan supaya ga gampang rusak lagi.", image: "/images/avatar9.png" },
       ]
     }
   },
@@ -106,21 +111,22 @@ const dictionary: Dictionary = {
     },
     hero: {
       badge: "Professional Electric Stove Specialists",
-      title_1: "Smooth Cooking with  ",
-      title_italic: "Electric Stoves ",
-      title_2: "Always Ready to Use",
-      sub: "Restore your cooking convenience without interruption. Backed by experienced technicians, we are ready to provide fast, safe, and guaranteed electric stove repair and maintenance services.",
+      title_1: "Amanda House Tehnik",
+      sub: "Repairing all brands of electric stoves in Surabaya and surrounding areas. On-site service, available for calls 24/7.",
       cta_quote: "Free Consultation Now",
       cta_wa: "Chat via WhatsApp",
     },
     services: {
-      tag: "Our Services",
-      title: "Comprehensive and reliable solutions for all your electric stove needs.",
+      tag: "Common Issues",
+      title: "Common electric stove problems that we handle, and many more.",
+      sub: "If you encounter any other issues not listed here, feel free to consult with our technicians.",
       list: [
-        { title: "Quick Repairs", desc: "Resolve your electric stove issues such as total failure, insufficient heat, or short circuits with expert handling." },
-        { title: "New Installations", desc: "Safe and standard-compliant installation of built-in or induction stoves for optimal performance." },
-        { title: "Regular Maintenance", desc: "Internal cleaning and component checks to maintain temperature stability and overall safety." },
-        { title: "Consultation & Inspection", desc: "Thorough check-ups to ensure your kitchen's electrical setup is perfectly safe to use." },
+        { title: "Total Failure", desc: "The stove won't turn on at all even when properly connected to a power source." },
+        { title: "Not Heating", desc: "The stove powers on but the heating element fails to work or provides uneven heat." },
+        { title: "Electrical Short", desc: "House circuit breaker frequently trips or shuts down when the stove is turned on." },
+        { title: "Error Codes", desc: "Specific error codes (E1, E2, etc.) appearing on the display, preventing normal use." },
+        { title: "Touch Panel Failure", desc: "The touch buttons or control panel are unresponsive when pressed." },
+        { title: "Sudden Shutdown", desc: "The stove suddenly turns off while in use, even without any timer settings." },
       ]
     },
     pricing: {
@@ -175,9 +181,12 @@ const dictionary: Dictionary = {
       tag: "What They Say",
       title: "Customer satisfaction is our ultimate pride.",
       list: [
-        { name: "Andi Saputra", role: "Homeowner", text: "Excellent service! The technician arrived on time, worked neatly, and my electric stove was back to normal in no time. Highly recommended." },
-        { name: "Siska Wijaya", role: "Property Owner", text: "I've been using Amanda House Tehnik's services for the communal kitchen in my boarding house. Their regular maintenance keeps the stoves durable. Thank you!" },
-        { name: "Budi Santoso", role: "Client", text: "The service was very honest and transparent from the start. The technician was friendly and patiently explained safe usage steps. Very satisfied!" },
+        { name: "Andi Saputra", role: "Homeowner", text: "They've become my go-to whenever my electric stove acts up. They're available for calls anytime, which is exactly what I need.", image: "/images/avatar4.png" },
+        { name: "Siska Wijaya", role: "Property Owner", text: "The technician arrived on time and explained the issues in detail. My stove is now stable and safe to use.", image: "/images/avatar5.png" },
+        { name: "Budi Santoso", role: "Client", text: "I was hesitant at first, but the results were satisfying. My stove is back to normal, and the pricing was transparent with no hidden fees.", image: "/images/avatar6.png" },
+        { name: "Rina Amelia", role: "Housewife", text: "So happy I finally found a reliable service. My induction stove that was completely dead is now back to normal.", image: "/images/avatar7.png" },
+        { name: "Hendra Gunawan", role: "Entrepreneur", text: "Very fast response, professional technicians. Extremely helpful for my restaurant kitchen's urgent needs.", image: "/images/avatar8.png" },
+        { name: "Siti Khadijah", role: "Apartment Owner", text: "Quality service for a fair price. Not only did they fix it, but they also gave me maintenance tips to prevent future issues.", image: "/images/avatar9.png" },
       ]
     }
   }

@@ -18,10 +18,10 @@ export function WhyChooseUs() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="order-2 lg:order-1">
             <h2 className="text-xs lg:text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4 lg:mb-6">{t("whyUs.tag")}</h2>
-            <h3 className="text-3xl lg:text-5xl font-medium mb-6 lg:mb-10 leading-tight text-black tracking-tight">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-6 lg:mb-10 leading-tight text-black tracking-tight">
               {t("whyUs.title")}
             </h3>
-            <p className="text-base lg:text-lg text-neutral-600 mb-10 lg:mb-16 font-light leading-relaxed max-w-lg">
+            <p className="text-sm sm:text-base lg:text-lg text-neutral-600 mb-10 lg:mb-16 font-light leading-relaxed max-w-lg">
               {t("whyUs.sub")}
             </p>
 
@@ -74,7 +74,7 @@ export function WhyChooseUs() {
 
                   <div className="relative">
                     <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-full" />
-                    <span className="relative text-5xl lg:text-7xl font-serif italic text-primary leading-none">10+</span>
+                    <span className="relative text-5xl lg:text-7xl font-serif italic text-primary leading-none">5+</span>
                   </div>
 
                   <div className="flex flex-col">

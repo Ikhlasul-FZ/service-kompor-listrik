@@ -40,17 +40,16 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-4xl sm:text-5xl lg:text-8xl font-medium leading-[1.1] lg:leading-[1.05] mb-6 lg:mb-8 tracking-tight text-white"
+            className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-8xl font-medium leading-[1.1] lg:leading-[1.05] mb-6 lg:mb-10 tracking-tight text-white px-4 md:px-0 whitespace-nowrap"
           >
-            {t("hero.title_1")}<span className="text-primary italic font-serif">{t("hero.title_italic")}</span><br className="hidden sm:block" />
-            {t("hero.title_2")}
+            {t("hero.title_1")}
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-base lg:text-xl text-neutral-300 mb-10 lg:mb-12 max-w-2xl mx-auto leading-relaxed font-light"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-neutral-300 mb-10 lg:mb-14 max-w-2xl mx-auto leading-relaxed font-light px-6 sm:px-0"
           >
             {t("hero.sub")}
           </motion.p>

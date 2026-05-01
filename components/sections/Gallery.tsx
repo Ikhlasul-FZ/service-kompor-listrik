@@ -7,45 +7,41 @@ import { ArrowUpRight, X } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const projects = [
-  {
-    id: "01",
-    title: "Project 1",
-    desc: "Electric Stove Installation",
-    image: "/images/img1.webp"
-  },
-  {
-    id: "02",
-    title: "Project 2",
-    desc: "Electric Stove Installation",
-    image: "/images/img2.webp"
-  },
-  {
-    id: "03",
-    title: "Project 3",
-    desc: "Electric Stove Service",
-    image: "/images/img3.webp"
-  },
-  {
-    id: "04",
-    title: "Project 4",
-    desc: "Electric Stove Service",
-    image: "/images/img4.webp"
-  },
+  { id: "01", title: "Project 1", desc: "Electric Stove Installation", image: "/images/img1.webp" },
+  { id: "02", title: "Project 2", desc: "Electric Stove Installation", image: "/images/img2.webp" },
+  { id: "03", title: "Project 3", desc: "Electric Stove Service", image: "/images/img3.webp" },
+  { id: "04", title: "Project 4", desc: "Electric Stove Service", image: "/images/img4.webp" },
+  { id: "05", title: "Project 5", desc: "Water Heater Service", image: "/images/img5.webp" },
+  { id: "06", title: "Project 6", desc: "Water Heater Service", image: "/images/img6.webp" },
+  { id: "07", title: "Project 7", desc: "Water Heater Service", image: "/images/img7.webp" },
+  { id: "08", title: "Project 8", desc: "Water Heater Service", image: "/images/img8.webp" },
 ];
 
 // Extended list for the "View All" modal
 const allArchives = [
   ...projects,
-  { id: "05", title: "Project 5", desc: "Water Heater Service", image: "/images/img5.webp" },
-  { id: "06", title: "Project 6", desc: "Water Heater Service", image: "/images/img6.webp" },
-  { id: "07", title: "Project 7", desc: "Water Heater Service", image: "/images/img7.webp" },
-  { id: "08", title: "Project 8", desc: "Water Heater Service", image: "/images/img8.webp" },
   { id: "09", title: "Project 9", desc: "Water Heater Service", image: "/images/img9.webp" },
   { id: "10", title: "Project 10", desc: "Water Heater Service", image: "/images/img10.webp" },
   { id: "11", title: "Project 11", desc: "Water Heater Service", image: "/images/img11.webp" },
   { id: "12", title: "Project 12", desc: "Water Heater Service", image: "/images/img12.webp" },
   { id: "13", title: "Project 13", desc: "Water Heater Service", image: "/images/img13.webp" },
   { id: "14", title: "Project 14", desc: "Water Heater Service", image: "/images/img14.webp" },
+  { id: "15", title: "Project 15", desc: "Water Heater Service", image: "/images/img15.webp" },
+  { id: "16", title: "Project 16", desc: "Water Heater Service", image: "/images/img1 (16).webp" },
+  { id: "17", title: "Project 17", desc: "Water Heater Service", image: "/images/img1 (17).webp" },
+  { id: "18", title: "Project 18", desc: "Water Heater Service", image: "/images/img1 (18).webp" },
+  { id: "19", title: "Project 19", desc: "Water Heater Service", image: "/images/img1 (19).webp" },
+  { id: "20", title: "Project 20", desc: "Water Heater Service", image: "/images/img1 (20).webp" },
+  { id: "21", title: "Project 21", desc: "Water Heater Service", image: "/images/img1 (21).webp" },
+  { id: "22", title: "Project 22", desc: "Water Heater Service", image: "/images/img1 (22).webp" },
+  { id: "23", title: "Project 23", desc: "Water Heater Service", image: "/images/img1 (23).webp" },
+  { id: "24", title: "Project 24", desc: "Water Heater Service", image: "/images/img1 (24).webp" },
+  { id: "25", title: "Project 25", desc: "Water Heater Service", image: "/images/img1 (25).webp" },
+  { id: "26", title: "Project 26", desc: "Water Heater Service", image: "/images/img1 (26).webp" },
+  { id: "27", title: "Project 27", desc: "Water Heater Service", image: "/images/img1 (27).webp" },
+  { id: "28", title: "Project 28", desc: "Water Heater Service", image: "/images/img1 (28).webp" },
+  { id: "29", title: "Project 29", desc: "Water Heater Service", image: "/images/img1 (29).webp" },
+  { id: "30", title: "Project 30", desc: "Water Heater Service", image: "/images/img1 (30).webp" },
 ];
 
 export function Gallery() {
@@ -59,7 +55,7 @@ export function Gallery() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 lg:gap-10 mb-16 lg:mb-24">
           <div className="max-w-2xl">
             <h2 className="text-xs lg:text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4 lg:mb-6">{t("gallery.tag")}</h2>
-            <h3 className="text-3xl lg:text-5xl font-medium tracking-tight text-black leading-tight">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-black leading-tight">
               {t("gallery.title")}
             </h3>
           </div>
@@ -71,7 +67,7 @@ export function Gallery() {
           </button>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 md:gap-10 lg:gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -82,26 +78,26 @@ export function Gallery() {
               className="group cursor-pointer"
               onClick={() => setSelectedImage(project.image)}
             >
-              <div className="aspect-[4/5] rounded-[32px] lg:rounded-[48px] bg-neutral-100 mb-6 lg:mb-8 overflow-hidden relative border border-neutral-100 transition-transform duration-700 group-hover:scale-[0.98]">
+              <div className="aspect-[3/4] sm:aspect-[4/5] rounded-[24px] sm:rounded-[32px] lg:rounded-[48px] bg-neutral-100 mb-3 sm:mb-6 lg:mb-8 overflow-hidden relative border border-neutral-100 transition-transform duration-700 group-hover:scale-[0.98]">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   className="object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
-                <div className="absolute top-6 left-6 lg:top-8 lg:left-8 text-[10px] font-bold text-white/50 tracking-widest drop-shadow-md">
+                <div className="absolute top-3 left-3 sm:top-6 sm:left-6 lg:top-8 lg:left-8 text-[8px] sm:text-[10px] font-bold text-white/50 tracking-widest drop-shadow-md">
                   {project.id}
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black/20 backdrop-blur-[2px]">
-                  <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-2xl transition-transform duration-500 group-hover:scale-110">
-                    <ArrowUpRight className="w-4 h-4 lg:w-5 lg:h-5" />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-2xl transition-transform duration-500 group-hover:scale-110">
+                    <ArrowUpRight className="w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5" />
                   </div>
                 </div>
               </div>
-              <div className="flex justify-between items-start">
+              <div className="flex justify-between items-start px-1 sm:px-0">
                 <div>
-                  <h4 className="text-base lg:text-lg font-semibold text-black mb-1 group-hover:text-primary transition-colors">{project.title}</h4>
-                  <p className="text-xs lg:text-sm text-neutral-500 font-light tracking-wide">{project.desc}</p>
+                  <h4 className="text-xs sm:text-base lg:text-lg font-semibold text-black mb-0.5 sm:mb-1 group-hover:text-primary transition-colors line-clamp-1">{project.title}</h4>
+                  <p className="text-[9px] sm:text-xs lg:text-sm text-neutral-500 font-light tracking-wide line-clamp-1">{project.desc}</p>
                 </div>
               </div>
             </motion.div>
