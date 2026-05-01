@@ -55,7 +55,7 @@ export function Navbar() {
               "font-bold tracking-tight transition-all duration-500",
               isScrolled ? "text-black text-base" : "text-white text-lg"
             )}>
-              Amanda<span className="text-primary">HouseTehnik</span>
+              Amanda<span className="text-primary">HouseTeknik</span>
             </span>
           </Link>
 

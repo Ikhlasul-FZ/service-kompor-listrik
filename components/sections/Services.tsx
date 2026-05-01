@@ -2,10 +2,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Power, Flame, Zap, AlertCircle, Settings2, Timer } from "lucide-react";
+import { Power, Flame, Zap, AlertCircle, Settings2, Timer, Activity, Wrench } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
-const icons = [Power, Flame, Zap, AlertCircle, Settings2, Timer];
+const icons = [Flame, Power, Zap, Activity, AlertCircle, Settings2, Timer, Wrench];
 
 export function Services() {
   const { t } = useLanguage();

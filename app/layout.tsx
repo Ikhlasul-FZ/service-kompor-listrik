@@ -17,21 +17,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Amanda House Tehnik | Service Kompor Listrik Surabaya & Sekitarnya",
+  title: "Amanda House Teknik | Service Kompor Listrik Surabaya & Sekitarnya",
   description: "Jasa Service Kompor Listrik, Kompor Induksi, dan Water Heater Profesional di Surabaya. Teknisi berpengalaman, panggil 24 jam, dan bergaransi.",
-  keywords: "service kompor listrik surabaya, service kompor induksi surabaya, servis kompor listrik panggilan, teknisi kompor listrik terdekat, perbaikan kompor listrik surabaya, amanda house tehnik",
-  authors: [{ name: "Amanda House Tehnik" }],
+  keywords: "service kompor listrik surabaya, service kompor induksi surabaya, servis kompor listrik panggilan, teknisi kompor listrik terdekat, perbaikan kompor listrik surabaya, amanda house Teknik",
+  authors: [{ name: "Amanda House Teknik" }],
   openGraph: {
-    title: "Amanda House Tehnik | Service Kompor Listrik Surabaya",
+    title: "Amanda House Teknik | Service Kompor Listrik Surabaya",
     description: "Layanan jasa servis kompor listrik dan induksi panggilan 24 jam di Surabaya dan sekitarnya.",
     url: "https://amandaservice.com/",
-    siteName: "Amanda House Tehnik",
+    siteName: "Amanda House Teknik",
     images: [
       {
         url: "/images/hero.webp",
         width: 1200,
         height: 630,
-        alt: "Service Kompor Listrik Amanda House Tehnik",
+        alt: "Service Kompor Listrik Amanda House Teknik",
       },
     ],
     locale: "id_ID",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Amanda House Tehnik",
+  "name": "Amanda House Teknik",
   "image": "https://amandaservice.com/images/hero.webp",
   "@id": "https://amandaservice.com",
   "url": "https://amandaservice.com",

@@ -19,7 +19,7 @@ export function Footer() {
                 <Image src="/images/log.png" alt="Logo" fill className="object-contain" priority />
               </div>
               <span className="text-2xl font-bold tracking-tighter text-white">
-                Amanda <span className="text-primary">House Tehnik</span>
+                Amanda <span className="text-primary">House Teknik</span>
               </span>
             </Link>
             <p className="text-muted-foreground leading-relaxed text-lg">

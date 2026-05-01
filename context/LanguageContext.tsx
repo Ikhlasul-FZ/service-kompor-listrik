@@ -21,23 +21,25 @@ const dictionary: Dictionary = {
     },
     hero: {
       badge: "Spesialis Kompor Listrik",
-      title_1: "Amanda House Tehnik",
+      title_1: "Amanda House Teknik",
 
-      sub: "Melayani service semua merk kompor listrik di area Surabaya dan sekitarnya. Pelayanan ditempat siap dipanggil 24 jam.",
+      sub: "Melayani service semua merk kompor listrik free standing dan tanam di area Surabaya dan sekitarnya. Pelayanan ditempat siap dipanggil 24 jam.",
       cta_quote: "Konsultasi Gratis",
       cta_wa: "WhatsApp",
     },
     services: {
       tag: "Permasalahan Umum",
-      title: "Masalah kompor listrik yang sering kami tangani, dan lain-lain.",
+      title: "Masalah kompor listrik free standing dan tanam",
       sub: "Jika Anda mengalami kendala lain di luar daftar ini, jangan ragu untuk berkonsultasi dengan teknisi kami.",
       list: [
-        { title: "Mati Total", desc: "Kompor tidak mau menyala sama sekali meskipun sudah terhubung ke aliran listrik." },
-        { title: "Tidak Panas", desc: "Kompor menyala namun elemen pemanas tidak berfungsi atau panas tidak merata." },
-        { title: "Konsleting Listrik", desc: "Listrik rumah sering anjlok atau turun saat kompor listrik sedang digunakan." },
-        { title: "Muncul Kode Error", desc: "Muncul kode error (E1, E2, dll) pada display yang menyebabkan kompor tidak berfungsi." },
-        { title: "Panel Sentuh Rusak", desc: "Tombol atau panel sentuh tidak merespon sama sekali saat dioperasikan." },
-        { title: "Kompor Mati Sendiri", desc: "Kompor tiba-tiba mati saat sedang digunakan meskipun tidak ada pengaturan timer." },
+        { title: "Api Kecil", desc: "Api pada tungku kompor mengecil tidak seperti biasanya meskipun gas masih penuh." },
+        { title: "Mati Total", desc: "Kompor tidak mau menyala sama sekali baik pemantik maupun sistem kelistrikannya." },
+        { title: "Pemantik Mati", desc: "Sistem pemantik kompor tidak mengeluarkan percikan atau gagal menyalakan api." },
+        { title: "Api Tidak Rata", desc: "Penyebaran api pada tungku tidak merata yang menyebabkan masakan lama matang." },
+        { title: "Gagal Menyala", desc: "Kompor tidak bisa hidup padahal stok gas masih banyak dan regulator normal." },
+        { title: "Konsleting Body", desc: "Terjadi aliran listrik (nyetrum) pada body kompor saat sedang disentuh atau digunakan." },
+        { title: "Api Tidak Awet", desc: "Api kompor sering mati sendiri atau tidak bisa bertahan lama saat sedang memasak." },
+        { title: "Ganti Spare Part", desc: "Menyediakan berbagai suku cadang asli untuk semua merk kompor, mulai dari elemen hingga panel kontrol." },
       ]
     },
     pricing: {
@@ -86,7 +88,7 @@ const dictionary: Dictionary = {
       links_title: "Akses Cepat",
       services_title: "Layanan Unggulan",
       contact_title: "Hubungi Kami",
-      rights: "© 2026 Amanda House Tehnik. Hak cipta dilindungi undang-undang.",
+      rights: "© 2026 Amanda House Teknik. Hak cipta dilindungi undang-undang.",
     },
     testimonials: {
       tag: "Kata Mereka",
@@ -111,7 +113,7 @@ const dictionary: Dictionary = {
     },
     hero: {
       badge: "Professional Electric Stove Specialists",
-      title_1: "Amanda House Tehnik",
+      title_1: "Amanda House Teknik",
       sub: "Repairing all brands of electric stoves in Surabaya and surrounding areas. On-site service, available for calls 24/7.",
       cta_quote: "Free Consultation Now",
       cta_wa: "Chat via WhatsApp",
@@ -121,12 +123,14 @@ const dictionary: Dictionary = {
       title: "Common electric stove problems that we handle, and many more.",
       sub: "If you encounter any other issues not listed here, feel free to consult with our technicians.",
       list: [
-        { title: "Total Failure", desc: "The stove won't turn on at all even when properly connected to a power source." },
-        { title: "Not Heating", desc: "The stove powers on but the heating element fails to work or provides uneven heat." },
-        { title: "Electrical Short", desc: "House circuit breaker frequently trips or shuts down when the stove is turned on." },
-        { title: "Error Codes", desc: "Specific error codes (E1, E2, etc.) appearing on the display, preventing normal use." },
-        { title: "Touch Panel Failure", desc: "The touch buttons or control panel are unresponsive when pressed." },
-        { title: "Sudden Shutdown", desc: "The stove suddenly turns off while in use, even without any timer settings." },
+        { title: "Small Flame", desc: "Burner flame is smaller than usual even when the gas tank is full." },
+        { title: "Total Failure", desc: "Stove won't turn on at all, both the igniter and electrical system are unresponsive." },
+        { title: "Igniter Failure", desc: "Ignition system fails to spark or ignite the burner flame." },
+        { title: "Uneven Flame", desc: "Flame distribution on the burner is uneven, causing inconsistent results." },
+        { title: "Failed to Light", desc: "Stove won't light up even though gas levels are sufficient and regulator is fine." },
+        { title: "Body Short Circuit", desc: "Electrical leakage or static shock felt on the stove body during operation." },
+        { title: "Flame Instability", desc: "Flame keeps going out or fails to stay lit during the cooking process." },
+        { title: "Spare Part Replacement", desc: "Providing original spare parts for all stove brands, from heating elements to control panels." },
       ]
     },
     pricing: {
@@ -175,7 +179,7 @@ const dictionary: Dictionary = {
       links_title: "Quick Links",
       services_title: "Key Services",
       contact_title: "Contact Us",
-      rights: "© 2026 Amanda House Tehnik. All rights reserved.",
+      rights: "© 2026 Amanda House Teknik. All rights reserved.",
     },
     testimonials: {
       tag: "What They Say",
