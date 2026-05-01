@@ -78,6 +78,7 @@ export function Gallery() {
                   alt={project.title}
                   fill
                   className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                 />
                 <div className="absolute top-3 left-3 sm:top-6 sm:left-6 lg:top-8 lg:left-8 text-[8px] sm:text-[10px] font-bold text-white/50 tracking-widest drop-shadow-md">
                   {project.id}

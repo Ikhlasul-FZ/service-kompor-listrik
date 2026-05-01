@@ -17,8 +17,70 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Amanda House Tehnik | Service Kompor Listrik",
-  description: "Service Kompor Listrik Profesional dan Terpercaya.",
+  title: "Amanda House Tehnik | Service Kompor Listrik Surabaya & Sekitarnya",
+  description: "Jasa Service Kompor Listrik, Kompor Induksi, dan Water Heater Profesional di Surabaya. Teknisi berpengalaman, panggil 24 jam, dan bergaransi.",
+  keywords: "service kompor listrik surabaya, service kompor induksi surabaya, servis kompor listrik panggilan, teknisi kompor listrik terdekat, perbaikan kompor listrik surabaya, amanda house tehnik",
+  authors: [{ name: "Amanda House Tehnik" }],
+  openGraph: {
+    title: "Amanda House Tehnik | Service Kompor Listrik Surabaya",
+    description: "Layanan jasa servis kompor listrik dan induksi panggilan 24 jam di Surabaya dan sekitarnya.",
+    url: "https://amandaservice.com/",
+    siteName: "Amanda House Tehnik",
+    images: [
+      {
+        url: "/images/hero.webp",
+        width: 1200,
+        height: 630,
+        alt: "Service Kompor Listrik Amanda House Tehnik",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Amanda House Tehnik",
+  "image": "https://amandaservice.com/images/hero.webp",
+  "@id": "https://amandaservice.com",
+  "url": "https://amandaservice.com",
+  "telephone": "+6285190876262",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Surabaya",
+    "addressLocality": "Surabaya",
+    "addressRegion": "Jawa Timur",
+    "postalCode": "60000",
+    "addressCountry": "ID"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -7.2575,
+    "longitude": 112.7521
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": [
+    "https://wa.me/6285190876262"
+  ]
 };
 
 export default function RootLayout({
@@ -28,9 +90,15 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="id"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <LanguageProvider>
           <div className="overflow-x-hidden">
