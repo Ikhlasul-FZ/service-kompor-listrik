@@ -25,18 +25,18 @@ export function WhyChooseUs() {
               {t("whyUs.sub")}
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-8 lg:gap-10">
+            <div className="grid grid-cols-2 gap-6 sm:gap-10">
               {features.map((f: any, index: number) => {
                 const Icon = icons[index];
                 return (
                   <div key={f.title} className="group">
-                    <div className="flex items-center gap-3 mb-3 lg:mb-4">
-                      <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-all duration-500">
-                        <Icon className="w-4 h-4" />
+                    <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-4">
+                      <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-white flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                        <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                       </div>
-                      <h4 className="text-base lg:text-lg font-semibold text-black">{f.title}</h4>
+                      <h4 className="text-sm sm:text-lg font-semibold text-black line-clamp-1">{f.title}</h4>
                     </div>
-                    <p className="text-neutral-500 text-xs lg:text-sm leading-relaxed font-light">
+                    <p className="text-neutral-500 text-[10px] sm:text-sm leading-relaxed font-light line-clamp-3 sm:line-clamp-none">
                       {f.desc}
                     </p>
                   </div>

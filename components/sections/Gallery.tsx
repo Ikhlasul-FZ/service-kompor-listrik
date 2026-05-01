@@ -59,15 +59,9 @@ export function Gallery() {
               {t("gallery.title")}
             </h3>
           </div>
-          <button
-            onClick={() => setShowAll(true)}
-            className="text-[10px] lg:text-xs font-bold uppercase tracking-[0.2em] text-neutral-500 hover:text-primary transition-all duration-300 pb-2 border-b border-neutral-200 hover:border-primary self-start lg:self-auto"
-          >
-            {t("gallery.viewAll")}
-          </button>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 md:gap-10 lg:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 md:gap-10 lg:gap-8 mb-16 sm:mb-20">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -102,6 +96,16 @@ export function Gallery() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="flex justify-center">
+          <button
+            onClick={() => setShowAll(true)}
+            className="flex items-center justify-center gap-3 bg-primary text-white px-10 py-5 rounded-2xl font-bold text-base lg:text-lg hover:bg-primary/90 hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl shadow-primary/20 w-full sm:w-auto"
+          >
+            <ArrowUpRight className="w-6 h-6" />
+            {t("gallery.viewAll")}
+          </button>
         </div>
       </div>
 

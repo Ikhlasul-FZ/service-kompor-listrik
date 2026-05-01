@@ -78,7 +78,7 @@ const dictionary: Dictionary = {
     },
     gallery: {
       tag: "Portofolio Kami",
-      title: "Dokumentasi hasil kerja keras tim kami di lapangan.",
+      title: "Dokumentasi hasil tim kami di lapangan.",
       viewAll: "Lihat Semua Galeri"
     },
     footer: {

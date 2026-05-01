@@ -24,7 +24,7 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-x-12 lg:gap-y-16">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10 lg:gap-x-12 lg:gap-y-16">
           {servicesList.map((service: any, index: number) => {
             const Icon = icons[index];
             return (
@@ -36,11 +36,11 @@ export function Services() {
                 transition={{ delay: index * 0.1 }}
                 className="flex flex-col group"
               >
-                <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-2xl bg-neutral-100 flex items-center justify-center text-neutral-500 mb-6 lg:mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500">
-                  <Icon className="w-5 h-5 lg:w-6 lg:h-6" />
+                <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-xl sm:rounded-2xl bg-neutral-100 flex items-center justify-center text-neutral-500 mb-4 sm:mb-6 lg:mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                  <Icon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
                 </div>
-                <h4 className="text-lg lg:text-xl font-semibold mb-3 lg:mb-4 text-black">{service.title}</h4>
-                <p className="text-sm lg:text-base text-neutral-600 leading-relaxed font-light">
+                <h4 className="text-sm sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-3 lg:mb-4 text-black line-clamp-1">{service.title}</h4>
+                <p className="text-[10px] sm:text-sm lg:text-base text-neutral-600 leading-relaxed font-light line-clamp-3 sm:line-clamp-none">
                   {service.desc}
                 </p>
               </motion.div>

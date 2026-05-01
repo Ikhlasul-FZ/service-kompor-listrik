@@ -96,7 +96,7 @@ export function Testimonials() {
               transition={{ duration: 0.8, delay: i * 0.1 }}
               className="min-w-[85vw] md:min-w-[48vw] lg:min-w-[32vw] snap-start"
             >
-              <div className="h-full p-8 md:p-10 lg:p-14 rounded-[32px] md:rounded-[50px] bg-gradient-to-br from-white/[0.08] to-transparent border border-white/10 backdrop-blur-xl hover:border-primary/30 transition-all duration-700 flex flex-col group relative overflow-hidden">
+              <div className="h-full p-8 md:p-10 lg:p-14 rounded-[32px] md:rounded-[50px] bg-gradient-to-br from-white/[0.08] to-transparent border border-white/20 backdrop-blur-xl hover:border-primary transition-all duration-700 flex flex-col group relative overflow-hidden">
                 {/* Quote Icon */}
                 <Quote className="absolute top-6 right-6 md:top-10 md:right-10 w-8 h-8 md:w-12 md:h-12 text-white/5 group-hover:text-primary/10 transition-colors duration-700" />
 
