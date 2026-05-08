@@ -21,6 +21,18 @@ export const metadata: Metadata = {
   description: "Jasa Service Kompor Listrik, Kompor Induksi, dan Water Heater Profesional di Surabaya. Teknisi berpengalaman, panggil 24 jam, dan bergaransi.",
   keywords: "service kompor listrik surabaya, service kompor induksi surabaya, servis kompor listrik panggilan, teknisi kompor listrik terdekat, perbaikan kompor listrik surabaya, amanda house Teknik",
   authors: [{ name: "Amanda House Teknik" }],
+  icons: {
+    icon: [
+      { url: "/icon.png" },
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-icon.png" },
+    ],
+  },
+  verification: {
+    google: "3CjwLTLW2MglKM2H0O7sXEfygef3Gqcejn_PaCTfhu8",
+  },
   openGraph: {
     title: "Amanda House Teknik | Service Kompor Listrik Surabaya",
     description: "Layanan jasa servis kompor listrik dan induksi panggilan 24 jam di Surabaya dan sekitarnya.",
