@@ -23,11 +23,12 @@ export const metadata: Metadata = {
   authors: [{ name: "Amanda House Teknik" }],
   icons: {
     icon: [
-      { url: "/icon.png" },
-      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/icon.png" },
+      { url: "/images/icon.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/icon.png", sizes: "192x192", type: "image/png" },
     ],
     apple: [
-      { url: "/apple-icon.png" },
+      { url: "/images/icon.png" },
     ],
   },
   verification: {
