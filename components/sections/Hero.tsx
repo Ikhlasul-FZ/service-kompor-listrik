@@ -22,7 +22,7 @@ export function Hero() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/90" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/90 via-black/60 to-black/90" />
       </div>
 
       <div className="container mx-auto px-8 md:px-12 lg:px-16 relative z-10">

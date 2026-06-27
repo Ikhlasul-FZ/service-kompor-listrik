@@ -72,7 +72,7 @@ export function Gallery() {
               className="group cursor-pointer"
               onClick={() => setSelectedImage(project.image)}
             >
-              <div className="aspect-[3/4] sm:aspect-[4/5] rounded-[24px] sm:rounded-[32px] lg:rounded-[48px] bg-neutral-100 mb-3 sm:mb-6 lg:mb-8 overflow-hidden relative border border-neutral-100 transition-transform duration-700 group-hover:scale-[0.98]">
+              <div className="aspect-3/4 sm:aspect-4/5 rounded-[24px] sm:rounded-4xl lg:rounded-[48px] bg-neutral-100 mb-3 sm:mb-6 lg:mb-8 overflow-hidden relative border border-neutral-100 transition-transform duration-700 group-hover:scale-[0.98]">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -118,7 +118,7 @@ export function Gallery() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[100] bg-white flex flex-col"
+            className="fixed inset-0 z-100 bg-white flex flex-col"
           >
             <div className="container mx-auto px-8 md:px-12 lg:px-16 py-10 flex justify-between items-center border-b border-neutral-100">
               <div>
@@ -145,7 +145,7 @@ export function Gallery() {
                       className="group cursor-pointer"
                       onClick={() => setSelectedImage(item.image)}
                     >
-                      <div className="aspect-[4/5] rounded-[24px] lg:rounded-[40px] bg-neutral-100 overflow-hidden relative mb-4 border border-neutral-200">
+                      <div className="aspect-4/5 rounded-[24px] lg:rounded-[40px] bg-neutral-100 overflow-hidden relative mb-4 border border-neutral-200">
                         <Image
                           src={item.image}
                           alt={item.title}
@@ -176,11 +176,11 @@ export function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[110] bg-black/95 backdrop-blur-xl flex items-center justify-center p-4 lg:p-10"
+            className="fixed inset-0 z-110 bg-black/95 backdrop-blur-xl flex items-center justify-center p-4 lg:p-10"
             onClick={() => setSelectedImage(null)}
           >
             <button
-              className="absolute top-10 right-10 w-14 h-14 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-all z-[120]"
+              className="absolute top-10 right-10 w-14 h-14 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-all z-120"
               onClick={() => setSelectedImage(null)}
             >
               <X className="w-8 h-8" />
@@ -190,7 +190,7 @@ export function Gallery() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="relative w-full max-w-5xl aspect-[16/10] lg:aspect-auto lg:h-[80vh] rounded-[40px] overflow-hidden shadow-2xl"
+              className="relative w-full max-w-5xl aspect-16/10 lg:aspect-auto lg:h-[80vh] rounded-[40px] overflow-hidden shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               <Image
